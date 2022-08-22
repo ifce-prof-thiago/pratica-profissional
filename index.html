@@ -14,27 +14,25 @@
         }
 
         .main {
-            /* position: relative; */
-            width: 100%;
-            min-height: 100vh;
             background: linear-gradient(144.23deg, rgba(209, 204, 244, 0.69) -8.57%, #E6CECE 94.27%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    
+            width: 100%;
+           height: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
         }
+
 
         .login {
-           
-        }
-
-        .login-background {
 
             background: linear-gradient(204.28deg, #E6CECE 14.76%, #D1CCF4 97.11%);
-            width: 80%;
-            height: 80%;
+        
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 1.625em;
             display: flex;
+            height: 80%;
+            width: 80%;
 
         }
 
@@ -49,30 +47,74 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
         }
 
+        .login-language {
+        }
+
+        .login-form-data {
+            padding: 40px 20px 40px 20px;
+        }
+
+        input {
+            border: none;
+            width: 100%;
+        }
+
+        .input-control {
+            border: 4px solid #b7b7b7;
+            display: flex;
+            padding: 6px 16px;
+            margin-top: 20px;
+        }
+
     </style>
 
 </head>
 <body>
 
-    <div class="main">
-
-        <div class="login">
-           
-            <div class="login-background">
+    <div class="main">     
+            <div class="login">
 
                 <div class="login-info">
                     Junte-se a nós e seja a melhor turma do IF
                 </div>
 
                 <div class="login-form">
-                    O Formulário vai ficar aqui
+                    <div class="login-language">English LK ></div>
+
+                    <div class="login-form-data">
+                        <h2>Create account</h2>   
+                        <button>Sign in Google</button>
+                        <button>Sign in Facebook</button>
+
+                        <div>OR</div>
+
+                        <div class="input-control">
+                            <input type="email" placeholder="Email">
+                            <img src="email.svg" alt="">
+
+                        </div>
+
+                        <div class="input-control">
+                            <input type="text" placeholder="Username">
+                            <img src="username.svg" alt="">
+                            
+                        </div>
+                        <div class="input-control" >
+                            <input type="password" placeholder="Password">
+                            <img src="password.svg" alt="">
+                        </div>
+
+                        <div>
+                            Dont't you have account, click here
+                        </div>
+
+                        <div>
+                            <button>Create account</button>
+                        </div>
+                    </div>
+                    
                 </div>
-
-            </div>
-
         </div>
-
-
     </div>
     
 </body>
